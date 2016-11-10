@@ -1,0 +1,21 @@
+<% if @book.errors.any? %>
+	<ul>
+		<% @book.errors.full_messages.each do |msg| %>
+			<li><%= msg %></li> 
+		<% end %>
+	</ul>
+<% end %>
+
+
+<div class="form-group">
+	<%= f.label "Name : " %>
+	<%= f.text_field :name , :class => "form-control" %>
+	<%= f.label "Description" %>
+	<%= f.text_area :description , :class => "form-control" %>
+	<%= f.label "Isbn" %>
+	<%= f.number_field :isbn , :class => "form-control" %>
+	<br>
+	<%= f.submit :class => "btn btn-success" %>
+</div>
+
+
