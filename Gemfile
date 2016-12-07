@@ -5,6 +5,7 @@ source 'https://rubygems.org'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
+gem 'mysql2'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
@@ -33,7 +34,8 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'kaminari'
 gem 'faker'
 gem 'devise'
-
+gem 'capistrano-rails', :group => :development
+gem 'capistrano-passenger', :group => :development
 
 
 group :development, :test do
